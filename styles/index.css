@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+}
+a{
+    color: blue;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url("/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+
+}
+.header-container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 20px;
+}
+nav .nav-title-text h1{
+    font-size: 2rem;
+    color: blue;
+   
+    font-family: "Montez", cursive;
+}
+.nav-title-btns button{
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.outer, .signin{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.95;
+  display: none;
+   z-index: 100
+   ;position: fixed;
+   inset: 0;
+    
+}
+ .signup-model-box, .signin-model-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    
+    background-color: white;
+    padding: 15px 20px;
+   
+    /* border-radius: 5px; */
+}
+
+.signup-model-box form{
+    width: 100%;
+}
+
+form .form-boxes{
+    margin: 18px 0;
+    width: 100%;
+}
+form .form-boxes label{
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    
+}
+.form-boxes input{
+    width: 100%;
+    padding: 13px 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(218, 218, 218);
+}
+.form-boxes button{
+    text-align: center;
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    background-color:green;
+    opacity: .6;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+
+
+}
+.get-started-text{
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid grey;
+    padding: 10px 0;
+    color: rgb(87, 86, 86);
+}
+
+.get-started-text span{
+    position: absolute;
+    right: 0;
+    top: 14px;
+}
+.get-started-text span i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.remember{
+    text-align: center;
+}
+.posts-btns{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    gap: 10px;
+}
+.posts-btns button{
+    padding: 12px 20px;
+    border: none;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.create-post{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.980;
+    position: relative;
+    display: none;
+    
+    
+}
+.post-container{
+    width: 90%;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 20px ;
+    overflow: hidden;
+   
+    
+}
+
+.title{
+    margin: 18px 0;
+}
+.title h3{
+    margin: 13px 0;
+}
+.title input{
+    width: 100%;
+    padding: 12px 10px;
+    outline: none;
+    border: none;
+    
+}
+.title input, .title textarea{
+    background-color: rgb(218, 218, 218);
+
+}
+.title textarea{
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    
+}
+
+textarea::placeholder{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.create-btn{
+    text-align: center;
+}
+.create-btn button{
+    padding: 10px 30px;
+    background-color: rgb(90, 234, 90);
+    border: none;
+    color: white;
+    cursor: pointer;
+}

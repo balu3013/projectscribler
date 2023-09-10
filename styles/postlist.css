@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #ffeedd;
+    background-image: none;
+}
+.posts-container{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    
+    
+     /* display: grid;
+     grid-template-columns: 500px 500px;
+     place-items: center; */
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    gap: 30px;
+}
+.username{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.posts-container .user-posts{
+    width:500px ;
+    min-height: 100px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    flex-shrink: 0;
+    /* flex-grow: 1; */
+    transition: .5s;
+}
+.user-posts:hover{
+    box-shadow: 0 0 20px 1px rgb(74, 75, 76);
+}
+
+.user-posts .post-content{
+    height: 100%;
+    background-color: rgb(190, 190, 190);
+   padding:  10px;
+}
+.trash, .ellipsis{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.trash{
+    top: 10px;
+}
+.ellipsis{
+    bottom: 10px;
+}
+.post-content p{
+    margin: 10px 0;
+}
+
+
+.para-text{
+    margin: 20px 0;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background:rgba(0,0,0,.950);
+    z-index: 100;
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+.background .choose{
+    width: max-content;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    /* text-align: center; */
+}
+.choose h3{
+    margin: 20px 0;
+}
+.choose .btn-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    
+}
+.btn-container button{
+    padding: 13px 30px;
+    border: none;
+    color: white;
+    opacity: .8;
+    cursor: pointer;
+}
+
+
+.btn-container button:nth-child(1){
+    background-color: green;
+}
+.btn-container button:nth-child(2){
+    background-color: red;
+}
