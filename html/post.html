@@ -15,12 +15,12 @@
     <div class="header-container">
         <nav>
             <div class="nav-title-text">
-                <h1>Scribbler</h1>
+                <a href="/index.html"><h1>Scribbler</h1></a>
                 <span>Explore, Imagine, Create</span>
             </div>
             <div class="nav-title-btns">
-                <button id="signup">Sign Up</button>
-                <button id="signin">Sign In</button>
+                <button class="signup-btn">Sign Up</button>
+                <button class="signin-btn">Sign In</button>
             </div>
         </nav>
     </div>
@@ -32,25 +32,25 @@
             <span><i class="fa-solid fa-xmark mark"></i></span>
         </div>
         
-        <form>
+        <form action="#" autocomplete="on">
             <div class="form-boxes">
                 <label>Name</label>
-                <input required type="text" placeholder="Enter your name">
+                <input required type="text" autocomplete="on" placeholder="Enter your name">
             </div>
             <div class="form-boxes">
                 <label>Username</label>
-                <input required type="text" placeholder="Enter your username">
+                <input required type="text"  autocomplete="on" placeholder="Enter your username">
             </div>
             <div class="form-boxes">
                 <label>Password</label>
-                <input required type="password" placeholder="Enter your password">
+                <input required type="password" autocomplete="on" placeholder="Enter your password">
             </div>
             <div class="form-boxes">
                 <label>Confirm password</label>
-                <input required type="password" placeholder="Re-enter your password">
+                <input required type="password" autocomplete="on" placeholder="Re-enter your password">
             </div>
             <div class="form-boxes">
-                <button type="submit" id="btn">Sign Up</button>
+                <button type="submit" class="btn">Sign Up</button>
             </div>
         </form>
     </div>
@@ -61,30 +61,58 @@
                 <h2 id="text">Welcome Back!</h2>
                 <span><i class="fa-solid fa-xmark mark1"></i></span>
             </div>
-            <form>
+            <form action="#">
                 <div class="form-boxes">
                     <label>Username</label>
-                    <input required type="text" placeholder="Enter your username">
+                    <input required type="text" placeholder="Enter your username" autocomplete="on">
                 </div>
                 <div class="form-boxes">
                     <label>Password</label>
-                    <input required type="password" placeholder="Enter your password">
+                    <input required type="password" placeholder="Enter your password" autocomplete="on">
                 </div>
 
                 <div class="form-boxes">
-                    <button type="submit" id="btn">Sign Up</button>
+                    <button type="submit" class="btn">Sign Up</button>
                 </div>
             </form>
 
             <div class="form-boxes remember">
-                <h4>Not a member? <a href="#" id="redirect-to-signup"> Sign Up</a></span></h4>
+                <h4>Not a member? <a href="#" class="redirect-to-signup"> Sign Up</a></span></h4>
             </div>
         </div>
     </div>
     
 
+    <div class="reviews-container">
+        <input type="text" id="heading-data">
+        <div class="flex">
+            <h3>Srishti gupta</h3>
+            <div>
+                <button class="edit-btn">Edit<i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="edit-btn save">Save<i class="fa-solid fa-floppy-disk"></i></button>
+            </div>
+        </div>
+        <textarea id="review"></textarea>
+        <!-- <input id="review"> -->
+        <div class="like-btn">
+            <button id="like"><i class="fa-solid fa-thumbs-up"></i>Liked</button>
+            <p><span id="count">0</span> <span class="persons">person likes this!</span></p>
+            
+        </div>
+        <div class="textarea">
+            <textarea cols="30" rows="5" placeholder="Leave a comment..." id="comment-data"></textarea>
+        </div>
+        <button id="comment-btn">Comment</button>
+
+        <h2>All Comments</h2>
+        <div class="comments-container">
+
+        </div>
+        
+    </div>
+
     <script src="/scripts/postslist.js"></script>
     <script src="/scripts/post.js"></script>
-    <script src="/scripts/index.js"></script:scr>
+    <script src="/scripts/index.js"></script>
 </body>
 </html>

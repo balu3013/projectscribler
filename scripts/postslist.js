@@ -5,9 +5,9 @@ let noBtn = document.querySelector('#no-btn');
 let yesBtn = document.querySelector('#yes-btn');
 let userPosts = document.querySelectorAll('.user-posts');
 let container = document.querySelector('.posts-container');
-let ellipses = document.querySelectorAll('.ellipses');
+let ellipses = document.querySelectorAll('.ellipsis');
 
-// let postsContainer = document.querySelector('.posts-container');
+
 
 
 trashIcons.forEach((item) => {
@@ -19,17 +19,10 @@ trashIcons.forEach((item) => {
 
 ellipses.forEach((item) => {
     item.addEventListener('click', () => {
-        window.location.href = `<a href=${/html/post.html}`;
+        window.location.href = '/html/post.html';
+    
     })
 })
 noBtn.addEventListener('click', () => {
     background.style.display='none';
 })
-
-
-// userPosts.forEach((item) => {
-//     yes.addEventListener('click', () => {
-//         e.target.parentNode.parentNode.removeChild()
-//     })
-// })
-console.log(userPosts)

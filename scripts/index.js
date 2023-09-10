@@ -1,11 +1,11 @@
-let signUpBtn = document.querySelector('#signup');
+let signUpBtn = document.querySelector('.signup-btn');
 
-let signInBtn = document.querySelector('#signin');
+let signInBtn = document.querySelector('.signin-btn');
 let outer = document.querySelector('.outer');
 let signInBox = document.querySelector('.signin');
 let crossMark = document.querySelector('.mark');
 let crossMark1 = document.querySelector('.mark1');
-let signUpLink = document.querySelector('#redirect-to-signup');
+let signUpLink = document.querySelector('.redirect-to-signup');
 const createPost = document.querySelector('.create-post');
 const cancelPost = document.querySelector('.pen-mark');
 const postCreateBtn = document.querySelector('#createPost');
